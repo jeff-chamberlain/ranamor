@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "socket.io": "*",
-    "express": "*"
+    "express": "*",
+    "mysql": "*",
+    "ranamor-mod": "*"
   },
   "author": "Jeff Chamberlain",
   "license": "BSD-2-Clause"
