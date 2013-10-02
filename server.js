@@ -16,14 +16,13 @@ ranio.configure(function () {
 
 var pool  = mysql.createPool({
   host     : 'mysql.exninja.com',
-  user     : 'exninja',
-  password : 'ex1stent1al',
+  user     : 'raninja',
+  password : 'iLoveFrog5',
   database : 'ranadb',
 });
 
-ran.config_db(pool);
-
 ranio.of('/player').on('connection', function(socket) {
+	ran.config_db(pool);
 	ran.config_player({
 	socket: socket,
 	id: socket.id
