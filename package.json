@@ -9,7 +9,6 @@
   "dependencies": {
     "socket.io": "*",
     "express": "*",
-    "mysql": "*",
     "ranamor-mod": "*"
   },
   "author": "Jeff Chamberlain",
