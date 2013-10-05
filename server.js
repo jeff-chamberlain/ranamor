@@ -20,6 +20,10 @@ var pool  = mysql.createPool({
   user     : 'raninja',
   password : 'iLoveFrog5',
   database : 'ranadb',
+  /*host     : 'localhost',
+  user     : 'root',
+  password : 'root',
+  database : 'ranadb',*/
 });
 
 ranio.of('/player').on('connection', function(socket) {
