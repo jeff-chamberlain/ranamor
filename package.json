@@ -10,7 +10,8 @@
     "socket.io": "*",
     "express": "*",
     "ranamor-mod": "*",
-    "mysql": "*"
+    "mysql": "*",
+    "validator": "*"
   },
   "author": "Jeff Chamberlain",
   "license": "BSD-2-Clause"

@@ -1,8 +1,9 @@
 var io = require('socket.io'),
   express = require('express'),
   http = require('http'),
-  ran = require('ranamor-mod');
-  mysql = require('mysql');
+  ran = require('ranamor-mod'),
+  mysql = require('mysql'),
+  valid = require('validator');
   
 var app = express();
 var server = http.createServer(app);
@@ -22,9 +23,5 @@ var pool  = mysql.createPool({
 });
 
 ranio.of('/player').on('connection', function(socket) {
-	ran.config_db(pool);
-	ran.config_player({
-	socket: socket,
-	id: socket.id
-	});
+	ran.config_player(pool,socket);
 });
